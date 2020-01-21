@@ -1,0 +1,1119 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "LambdaStack.template.json"
+      },
+      "metadata": {
+        "/LambdaStack/Lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaServiceRoleA8ED4D3B",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new Function (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:433:31)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/LambdaSourceBucketNameParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaLambdaSourceBucketNameParameter159473FC",
+            "trace": [
+              "CfnParametersCode.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:261:31)",
+              "new Function (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:443:29)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/LambdaSourceObjectKeyParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaLambdaSourceObjectKeyParameter06573F1D",
+            "trace": [
+              "CfnParametersCode.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/code.ts:267:30)",
+              "new Function (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:443:29)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaD247545B",
+            "trace": [
+              "new Function (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:446:35)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:13:18)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/Lambda/Version2020-01-20T14:30:15.507Z/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaVersion20200120T143015507Z1D258DCE",
+            "trace": [
+              "new Version (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:137:21)",
+              "Function.addVersion (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/function.ts:565:12)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:19:26)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/LambdaAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaAlias9C15A666",
+            "trace": [
+              "new Alias (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-lambda/lib/alias.ts:136:19)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:20:19)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Application/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupApplication7B89ABEB",
+            "trace": [
+              "new LambdaApplication (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/application.ts:66:22)",
+              "new LambdaDeploymentGroup (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:154:45)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupServiceRoleA00955F3",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new LambdaDeploymentGroup (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:157:31)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroup6D277AF0",
+            "trace": [
+              "new LambdaDeploymentGroup (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:164:22)",
+              "new LambdaStack (/home/kader/projects/cdk-pipeline-demo/lib/lambda-stack.ts:25:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:9:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    },
+    "PipelineDeployingLambdaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "PipelineDeployingLambdaStack.template.json"
+      },
+      "metadata": {
+        "/PipelineDeployingLambdaStack/ImportedRepo/PipelineDeployingLambdaStackPipelineB6214A2BEventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImportedRepoPipelineDeployingLambdaStackPipelineB6214A2BEventRule287CF2E4",
+            "trace": [
+              "new Rule (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events/lib/rule.ts:119:22)",
+              "Import.onEvent (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:121:18)",
+              "Import.onStateChange (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:135:23)",
+              "Import.onReferenceUpdated (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:157:23)",
+              "Import.onCommit (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:203:23)",
+              "CodeCommitSourceAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:122:29)",
+              "CodeCommitSourceAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleBE66F777",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:665:31)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleDefaultPolicyD27F0F5C",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "PipelineProject.addToRolePolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:198:17)",
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:742:10)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/CdkBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuild455F642E",
+            "trace": [
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:712:22)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:20:22)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRole40E116C6",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:665:31)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRoleDefaultPolicyBE23D2E1",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "PipelineProject.addToRolePolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:198:17)",
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:742:10)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/LambdaBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildCF1FE7ED",
+            "trace": [
+              "new Project (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:712:22)",
+              "new PipelineProject (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:15:5)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:45:25)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKey01D58D69",
+            "trace": [
+              "new Key (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-kms/lib/key.ts:321:22)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:226:29)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucket22248F97",
+            "trace": [
+              "new Bucket (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1013:22)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:231:21)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKeyAlias5C510EEE",
+            "trace": [
+              "new Alias (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-kms/lib/alias.ts:153:22)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:238:7)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleD68726F7",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:247:31)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicyC7A05455",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "Function.addToPrincipal (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:147:61)",
+              "Function.addToPrincipalOrResource (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:117:26)",
+              "Bucket.grant (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:590:23)",
+              "Bucket.grantReadWrite (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:528:17)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:263:25)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineC660917D",
+            "trace": [
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:251:26)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRole89AB8DD5",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "Pipeline.getRoleForAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:518:20)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:355:29)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRoleDefaultPolicyD20EE23A",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "Function.addToPrincipal (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:147:61)",
+              "Function.addToPrincipalOrResource (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:117:26)",
+              "Bucket.grant (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:590:23)",
+              "Bucket.grantReadWrite (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:528:17)",
+              "CodeCommitSourceAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:130:20)",
+              "CodeCommitSourceAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRole46BEEA7C",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "Object.singletonEventRole (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:17:16)",
+              "CodePipeline.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:31:39)",
+              "Rule.addTarget (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events/lib/rule.ts:155:32)",
+              "Import.onEvent (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:126:10)",
+              "Import.onStateChange (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:135:23)",
+              "Import.onReferenceUpdated (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:157:23)",
+              "Import.onCommit (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:203:23)",
+              "CodeCommitSourceAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:122:29)",
+              "CodeCommitSourceAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRoleDefaultPolicyFF4FCCE0",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:21:20)",
+              "CodePipeline.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:31:39)",
+              "Rule.addTarget (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-events/lib/rule.ts:155:32)",
+              "Import.onEvent (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:126:10)",
+              "Import.onStateChange (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:135:23)",
+              "Import.onReferenceUpdated (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:157:23)",
+              "Import.onCommit (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:203:23)",
+              "CodeCommitSourceAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:122:29)",
+              "CodeCommitSourceAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRole2DAE39E9",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "Pipeline.getRoleForAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:518:20)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:355:29)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRoleDefaultPolicy3CA005F2",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "CodeBuildAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:123:18)",
+              "CodeBuildAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRole15F4B424",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "Pipeline.getRoleForAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:518:20)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:355:29)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRoleDefaultPolicyE350F3F9",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "CodeBuildAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:123:18)",
+              "CodeBuildAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleF8A74488",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "Pipeline.getRoleForAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:518:20)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:355:29)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleDefaultPolicy54A1AB67",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "SingletonPolicy.statementFor (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:580:17)",
+              "SingletonPolicy.grantPassRole (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:570:10)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:300:43)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:436:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRole89CA1043",
+            "trace": [
+              "new Role (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:289:18)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:280:32)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:436:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineDeployingLambdaStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRoleDefaultPolicyE83FD793",
+            "trace": [
+              "new Policy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/policy.ts:114:22)",
+              "Role.addToPolicy (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/role.ts:329:28)",
+              "Function.addToPrincipal (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:147:61)",
+              "Function.addToPrincipalOrResource (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-iam/lib/grant.ts:117:26)",
+              "Bucket.grant (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:590:23)",
+              "Bucket.grantRead (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:469:17)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:290:22)",
+              "CloudFormationCreateUpdateStackAction.bound (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:436:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:57:17)",
+              "Pipeline._attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:361:33)",
+              "Stage.attachActionToPipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:140:27)",
+              "Stage.addAction (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:90:29)",
+              "new Stage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/stage.ts:38:12)",
+              "Pipeline.addStage (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:298:19)",
+              "new Pipeline (/home/kader/projects/cdk-pipeline-demo/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:282:12)",
+              "new PipelineStack (/home/kader/projects/cdk-pipeline-demo/lib/pipeline-stack.ts:75:5)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/bin/pipeline.ts:10:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Module.m._compile (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:814:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/index.ts:817:12)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "main (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:226:14)",
+              "Object.<anonymous> (/home/kader/projects/cdk-pipeline-demo/node_modules/ts-node/src/bin.ts:485:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1144:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)",
+              "Module.load (internal/modules/cjs/loader.js:993:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:892:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)",
+              "/home/kader/.nvm/versions/node/v13.6.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/core": "1.21.1",
+      "@aws-cdk/cx-api": "1.21.1",
+      "@aws-cdk/aws-codedeploy": "1.21.1",
+      "@aws-cdk/aws-iam": "1.21.1",
+      "@aws-cdk/region-info": "1.21.1",
+      "@aws-cdk/aws-ec2": "1.21.1",
+      "@aws-cdk/aws-ssm": "1.21.1",
+      "@aws-cdk/aws-cloudwatch": "1.21.1",
+      "@aws-cdk/aws-s3": "1.21.1",
+      "@aws-cdk/aws-events": "1.21.1",
+      "@aws-cdk/aws-kms": "1.21.1",
+      "@aws-cdk/aws-lambda": "1.21.1",
+      "@aws-cdk/aws-sqs": "1.21.1",
+      "@aws-cdk/aws-s3-assets": "1.21.1",
+      "@aws-cdk/assets": "1.21.1",
+      "@aws-cdk/aws-codebuild": "1.21.1",
+      "@aws-cdk/aws-ecr-assets": "1.21.1",
+      "@aws-cdk/aws-cloudformation": "1.21.1",
+      "@aws-cdk/aws-ecr": "1.21.1",
+      "@aws-cdk/aws-codecommit": "1.21.1",
+      "@aws-cdk/aws-codepipeline": "1.21.1",
+      "@aws-cdk/aws-codepipeline-actions": "1.21.1",
+      "@aws-cdk/aws-events-targets": "1.21.1",
+      "@aws-cdk/aws-ecs": "1.21.1",
+      "@aws-cdk/aws-applicationautoscaling": "1.21.1",
+      "@aws-cdk/aws-autoscaling-common": "1.21.1",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.21.1",
+      "@aws-cdk/aws-servicediscovery": "1.21.1",
+      "@aws-cdk/aws-autoscaling": "1.21.1",
+      "@aws-cdk/aws-autoscaling-hooktargets": "1.21.1",
+      "@aws-cdk/aws-sns": "1.21.1",
+      "@aws-cdk/aws-sns-subscriptions": "1.21.1",
+      "@aws-cdk/aws-logs": "1.21.1",
+      "jsii-runtime": "node.js/v13.6.0"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const core_1 = require("@aws-cdk/core");
+const lambda_stack_1 = require("../lib/lambda-stack");
+const pipeline_stack_1 = require("../lib/pipeline-stack");
+const app = new core_1.App();
+const lambdaStack = new lambda_stack_1.LambdaStack(app, 'LambdaStack');
+new pipeline_stack_1.PipelineStack(app, 'PipelineDeployingLambdaStack', {
+    lambdaCode: lambdaStack.lambdaCode,
+});
+app.synth();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicGlwZWxpbmUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJwaXBlbGluZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFFQSx3Q0FBb0M7QUFDcEMsc0RBQWtEO0FBQ2xELDBEQUFzRDtBQUV0RCxNQUFNLEdBQUcsR0FBRyxJQUFJLFVBQUcsRUFBRSxDQUFDO0FBRXRCLE1BQU0sV0FBVyxHQUFHLElBQUksMEJBQVcsQ0FBQyxHQUFHLEVBQUUsYUFBYSxDQUFDLENBQUM7QUFDeEQsSUFBSSw4QkFBYSxDQUFDLEdBQUcsRUFBRSw4QkFBOEIsRUFBRTtJQUNyRCxVQUFVLEVBQUUsV0FBVyxDQUFDLFVBQVU7Q0FDbkMsQ0FBQyxDQUFDO0FBRUgsR0FBRyxDQUFDLEtBQUssRUFBRSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxuXG5pbXBvcnQgeyBBcHAgfSBmcm9tICdAYXdzLWNkay9jb3JlJztcbmltcG9ydCB7IExhbWJkYVN0YWNrIH0gZnJvbSAnLi4vbGliL2xhbWJkYS1zdGFjayc7XG5pbXBvcnQgeyBQaXBlbGluZVN0YWNrIH0gZnJvbSAnLi4vbGliL3BpcGVsaW5lLXN0YWNrJztcblxuY29uc3QgYXBwID0gbmV3IEFwcCgpO1xuXG5jb25zdCBsYW1iZGFTdGFjayA9IG5ldyBMYW1iZGFTdGFjayhhcHAsICdMYW1iZGFTdGFjaycpO1xubmV3IFBpcGVsaW5lU3RhY2soYXBwLCAnUGlwZWxpbmVEZXBsb3lpbmdMYW1iZGFTdGFjaycsIHtcbiAgbGFtYmRhQ29kZTogbGFtYmRhU3RhY2subGFtYmRhQ29kZSxcbn0pO1xuXG5hcHAuc3ludGgoKTsiXX0=
